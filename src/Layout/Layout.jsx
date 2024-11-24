@@ -2,15 +2,15 @@ import { Outlet } from "react-router-dom";
 // import "./Layout.css"
 
 
-// import MediaGallery from "../components/MediaGallery/MediaGallery";
+import MediaGallery from "../Gallery/Gallery";
 
 const Layout = () => {
     return (
         <div className="container">
             <div className="content">
                 {/* <Emphasis /> */}
-                {/* <MediaGallery />
-                <Outlet /> */}
+                <MediaGallery />
+                <Outlet />
             </div>
         </div>
     )

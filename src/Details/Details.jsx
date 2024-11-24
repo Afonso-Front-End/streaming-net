@@ -2,7 +2,7 @@ import { forwardRef, useState } from "react";
 import { PreviewModalPlayerContainer, PreviewModalPlayerContent, PreviewModalClosebtn, PreviewModalInfo } from "./DetailsStyle/DetailsStyle";
 import { AiOutlineClose } from "react-icons/ai";
 
-import Wallpaper from "./Wallpaper/wallpaper";
+import Wallpaper from "../../src/Details/Wallpaper/Wallpaper";
 // import ModalInfo from "./components/ModalInfo";
 // import ModallListTemp from "./components/ModallListTemp";
 // import ModallListEpisode from "./components/ModallListEpisode";

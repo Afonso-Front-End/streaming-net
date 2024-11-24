@@ -2,14 +2,14 @@ import { Outlet } from "react-router-dom";
 // import "./Layout.css"
 
 
-import MediaGallery from "../Gallery/Gallery";
+import Gallery from "../Gallery/Gallery";
 
 const Layout = () => {
     return (
         <div className="container">
             <div className="content">
                 {/* <Emphasis /> */}
-                <MediaGallery />
+                <Gallery />
                 <Outlet />
             </div>
         </div>

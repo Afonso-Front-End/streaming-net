@@ -3,10 +3,10 @@ import { CSSTransition } from "react-transition-group";
 
 import FetchMediaGallery from "../Api/FetchGallery";
 // import Loading from "../Loading/Loading";
-// import MediaDetails from "./MediaDetails";
+import Details from "../Details/Details";
 import { useRef, useState } from "react";
 
-const MediaGallery = () => {    
+const Gallery = () => {    
     const nodeRef = useRef(null);
     const { data, removeLoading } = FetchMediaGallery();
     const [isMediaDetailsVisibleModal, setMediaDetailsVisibleModal] = useState(false);
@@ -60,23 +60,23 @@ const MediaGallery = () => {
                 ))}
             {/* {!removeLoading && <Loading />} */}
 
-            {/* <CSSTransition
+            <CSSTransition
                 in={isMediaDetailsVisibleModal}
                 timeout={300}
                 classNames="episodios"
                 unmountOnExit
                 nodeRef={nodeRef}
             >
-                <MediaDetails
-                    setMediaDetailsVisibleModal={setMediaDetailsVisibleModal}
-                    setMediaCurret={setMediaCurret}
+                <Details
+                    // setMediaDetailsVisibleModal={setMediaDetailsVisibleModal}
+                    // setMediaCurret={setMediaCurret}
                     mediaCurrent={mediaCurrent}
-                    ref={nodeRef}
-                    data={data}
+                    // ref={nodeRef}
+                    // data={data}
                 />
-            </CSSTransition> */}
+            </CSSTransition>
         </ContainerMediaGallery>
     );
 };
 
-export default MediaGallery;
+export default Gallery;

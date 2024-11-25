@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from '../Layout/Layout';
-// import VideoPlay from '../components/VideoPlay/VideoPlay';
+import Streaming from '../Streaming/Streaming';
 
 const App = () => {
 
@@ -8,7 +8,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route index element={<Layout />} />
-        {/* <Route path='/video/:id/:name' element={<VideoPlay/>} /> */}
+        <Route path='/video/:id/:name' element={<Streaming/>} />
       </Routes>
     </Router>
   )

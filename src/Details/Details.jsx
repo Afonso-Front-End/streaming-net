@@ -3,9 +3,9 @@ import { PreviewModalPlayerContainer, PreviewModalPlayerContent, PreviewModalClo
 import { AiOutlineClose } from "react-icons/ai";
 
 import Wallpaper from "../../src/Details/Wallpaper/Wallpaper";
-// import ModalInfo from "./components/ModalInfo";
-// import ModallListTemp from "./components/ModallListTemp";
-// import ModallListEpisode from "./components/ModallListEpisode";
+import DetailsInfo from "./DetailsInfo/DetailsInfo";
+import DetailsTemp from "./DetailsTemp/DetailsTemp";
+import DetailsEpisodi from "./DetailsEpisodi/DetailsEpisodi";
 
 const Details = forwardRef(({ mediaCurrent, setMediaCurret, setMediaDetailsVisibleModal }, ref) => {
 
@@ -25,31 +25,31 @@ const Details = forwardRef(({ mediaCurrent, setMediaCurret, setMediaDetailsVisib
         <PreviewModalPlayerContainer ref={ref}>
             <PreviewModalPlayerContent>
 
-                {/* <PreviewModalClosebtn onClick={() => Closed()}>
+                <PreviewModalClosebtn onClick={() => Closed()}>
                     <AiOutlineClose size={22} color="#FDFDFD" />
-                </PreviewModalClosebtn> */}
+                </PreviewModalClosebtn>
 
                 <Wallpaper mediaCurrent={mediaCurrent} />
 
                 <PreviewModalInfo>
 
-                    {/* <ModalInfo
+                    <DetailsInfo
                         mediaCurrent={selectedTemporada}
                         dataInfo={dataInfo}
-                    /> */}
+                    />
 
-                    {/* <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "1.5rem 0rem 0.5rem 2rem" }}>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "1.5rem 0rem 0.5rem 2rem" }}>
                         <h5>Episodios</h5>
-                        <ModallListTemp
+                        <DetailsTemp
                             mediaCurrent={mediaCurrent}
                             onTemporadaSelect={handleTemporadaSelect}
                         />
-                    </div> */}
+                    </div>
 
-                    {/* <ModallListEpisode
+                    <DetailsEpisodi
                         mediaCurrent={selectedTemporada}
                         temporadas={mediaCurrent}
-                    /> */}
+                    />
                 </PreviewModalInfo>
 
             </PreviewModalPlayerContent>

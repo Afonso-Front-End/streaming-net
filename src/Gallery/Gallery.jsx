@@ -2,7 +2,7 @@ import { ContainerMediaGallery, SliderWrapper, Genero, Title, Slider, SliderCont
 import { CSSTransition } from "react-transition-group";
 
 import FetchMediaGallery from "../Api/FetchGallery";
-// import Loading from "../Loading/Loading";
+import Loading from "../Loading/Loading";
 import Details from "../Details/Details";
 import { useRef, useState } from "react";
 
@@ -58,7 +58,7 @@ const Gallery = () => {
                         </SliderContent>
                     </SliderWrapper>
                 ))}
-            {/* {!removeLoading && <Loading />} */}
+            {!removeLoading && <Loading />}
 
             <CSSTransition
                 in={isMediaDetailsVisibleModal}
@@ -68,11 +68,11 @@ const Gallery = () => {
                 nodeRef={nodeRef}
             >
                 <Details
-                    // setMediaDetailsVisibleModal={setMediaDetailsVisibleModal}
-                    // setMediaCurret={setMediaCurret}
+                    setMediaDetailsVisibleModal={setMediaDetailsVisibleModal}
+                    setMediaCurret={setMediaCurret}
                     mediaCurrent={mediaCurrent}
-                    // ref={nodeRef}
-                    // data={data}
+                    ref={nodeRef}
+                    data={data}
                 />
             </CSSTransition>
         </ContainerMediaGallery>

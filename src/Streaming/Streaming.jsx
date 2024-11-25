@@ -3,8 +3,8 @@
 // import { useParams } from "react-router-dom";
 import { ContainerPlay, ContentPlay, Video, Source } from "../Streaming/StreamingStyle/StreamingStyle";
 
-import StreamingControls from "./StreamingControls/StreamingControls.jsx";
-import useStreaming from "./UseStreaming/useStreaming.js";
+import StreamingControls from "../Streaming/StreamingControls/StreamingControls.jsx";
+import useStreaming from "../Streaming/useStreaming/useStreaming.js";
 const Streaming = () => {
     const { videoRef, setCurrentEpisode, currentEpisode, isPlaying, handlePlay, handlePause, handleToggleFullscreen, temporadas, mediaCurrent, } = useStreaming()
     return (
